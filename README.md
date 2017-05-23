@@ -16,3 +16,4 @@ Here are some sed commands to help clean up a copied pdf into text:
  # insert a blank line above and below every line which matches "regex"
  sed '/regex/{x;p;x;G;}'
 
+To Run the program type: perl test.pl
