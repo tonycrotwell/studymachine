@@ -1,0 +1,168 @@
+
+
+Question 1
+
+If you change the setting for the option cifs.neg_buf_size, you need to terminate CIFS on the
+storage appliance and do a restart for the changes to take effect.
+A. True
+B. False
+************
+Answer: A
+
+
+Question 2
+
+If the client is a CIFS client, locks are _____________.
+A. advisory
+B. mandatory
+C. ordered
+D. optional
+************
+Answer: B
+
+
+Question 3
+
+To view per client NFS statistics on the storage appliance, options nfs.per_client_stats, enable
+must be turned on.
+A. True
+B. False
+************
+Answer: A
+
+
+Question 4
+
+Three methods of creating a LUN are:
+*Iun setup
+*Iun map
+*FileView
+A. True
+B. False
+************
+Answer: A
+
+
+Question 5
+
+Applications, such as databases, running on NAS or iSCSI or FC SAN must be ___________?
+A. prepared for snapshots by flushing buffers to disk and momentarily suspending activity.
+B. disconnected from their storage resources during the snapshot.
+C. using dynamic multipathing during a backup.
+                                     
+                                                         
+D. mirrored with a host-based volume manager to be backed-up.
+************
+Answer: A
+
+
+Question 6
+
+To export volumes and directories automatically on reboot, include them in the /etc/exports file.
+A. True
+B. False
+************
+Answer: A
+
+
+Question 7
+
+Using the output below, a co-worker determined that these are type "Solaris" LUNs. What would
+your determination be?
+lun show-m
+LUN path Mapped to LUN ID
+--------------------------------------------------
+/voI/voI/Iun0 solaris-igroup0 0
+/voI/voI/Iun1 solaris-igroup1 0
+/voI/voI/qtree1/lun2 solaris-igroup2 0
+/voI/voI/qtree1/lun3 solaris-igroup3 0
+A. These are type "Solaris" LUNs.
+B. These are NFS LUNs, but the exact OS cannot be determined.
+C. Not enough information is given here. Run the lun show-v command to get the information
+requested.
+D. Not enough information is given here. Run the lun map command to get the information
+requested.
+************
+Answer: C
+
+
+Question 8
+
+Which one of the following will enable "symlink_strict_security"?
+A. options cifs.symlink_strict_security on
+B. cifs shares -change <sharename> -symlink_strict_security
+C. options symlink_strict_security=true
+D. options symlink_strict_security =on
+************
+Answer: B
+
+
+Question 9
+
+To configure a storage system as a member of an active directory, the time on the storage
+system must be synchronized with the time on the Domain Controller.
+                                         
+                                                      
+A. True
+B. False
+************
+Answer: A
+
+
+Question 10
+
+The write able snapshot that is created for a LUN clone depends on _______?
+A. mirroring.
+B. the snapshot taken at the time the clone was created.
+C. exclusive access to the volume.
+D. the data in the original LUN not changing.
+************
+Answer: B
+
+
+Question 11
+
+Which command is the most appropriate for troubleshooting a multiprotocol authentication
+problem?
+A. wcc
+B. rdfile /etc/rc
+C. priv set advanced
+D. sysstat 1
+************
+Answer: A
+
+
+Question 12
+
+A quota target can be defined as ____________?
+A. the maximum amount of disk space in a volume.
+B. the maximum number of files in a disk.
+C. a user, group, or qtree to which a quota is applied.
+D. a specific disk space threshold.
+************
+Answer: C
+
+
+Question 13
+
+Which three are used for creating LUNs on the storage appliance? (Choose 3)
+A. lun create
+B. lun setup
+C. FileView
+D. lun config
+************
+Answer: A, B, C
+                                    
+                                                      
+
+
+Question 14
+
+What is the outcome of this command?
+lun create -b /voI/voI2/.snapshot/testsnap/Iun0 /voI/voI2/Iun0.clone
+A. It creates a duplicate of the clone process of lun0.
+B. It creates a clone of the writeable snapshot of lun0
+C. It creates a writeable snapshot of lun0.
+D. It creates a snapshot "testsnap" of vol2.
+************
+Answer: C
