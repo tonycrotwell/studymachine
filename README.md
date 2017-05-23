@@ -3,6 +3,7 @@ Repo for scripts used to make my test study machine
 
 1. Change the perl script to look at the new file.
 2. Create the text file with 12 *'s as in sample
+    You can use pdftotext application on most linux machines to convert.
 
 Here are some sed commands to help clean up a copied pdf into text:
 
