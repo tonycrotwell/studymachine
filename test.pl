@@ -8,7 +8,7 @@ foreach $byte (split //, $string) {
 }
 $clear="/usr/bin/clear";
 system($clear);
-open(MYFILE, "./153") || die "Can't open zones_q: $!";
+open(MYFILE, "./example_test") || die "Can't open zones_q: $!";
 while(<MYFILE>) {
 $string=$_;
 &slowcat($string);
